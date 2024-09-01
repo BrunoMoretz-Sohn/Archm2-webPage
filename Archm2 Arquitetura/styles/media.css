@@ -1,0 +1,122 @@
+@media screen and (max-width: 768px) {
+
+  html {
+  font-size: 14px;
+  }
+
+  .page-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+
+  .bg-home::before {
+    background-size: auto 100%; 
+    background-position: bottom ; 
+    height: 80rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bg-home::after{
+    height: 80rem;
+  }
+
+  .bg-logo  {
+    margin-top: 100px;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .bg-logo img {
+    width: 250px; 
+    align-items: center;
+  }
+
+
+  .sidebar {
+    flex-direction: row; 
+     align-items: center; 
+     justify-content: space-evenly;
+     width: 100%; 
+     height: 5rem; 
+     border-bottom: 1px solid #2f3336; 
+     position: fixed;
+   }
+
+   .sidebar-nav {
+     z-index: 10;
+     margin-bottom: 40px;
+     display: flex; 
+     flex-direction: row !important;
+     position: fixed;
+   }
+
+  .sidebar button > span > span{
+    display: none;
+  }
+
+  .sidebar-icons {
+    display:none;
+  }
+
+  .solicitar-orcamento {
+   display: none;
+  }
+  .solicitar-orcamento img {
+    content: url("../assets/orcamento2.png");
+  }
+
+  /* destaques */ 
+
+  #destaq{
+    padding-top: 80px;
+
+  }
+
+  h2 {
+    left: 3rem;
+  }
+  h2::before {
+    width: 120%;
+  }
+
+
+  .container {
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90vw; /* Ajuste a largura para caber melhor em telas menores */
+    height: 40vh; /* Deixe a altura ajustar-se ao conteúdo */
+  }
+
+  .card img {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    height: auto; /* Ajuste automático da altura para manter a proporção */
+  }
+
+  .about {
+    width: 100%; /* A barra de informações ocupa toda a largura do card */
+    bottom: 5rem; /* Ajuste a posição se necessário */
+  }
+
+  .card p {
+    font-size: 0.9rem ;
+  }
+
+  .card:hover .about{
+    height: 200px;
+    bottom: 200px;
+  }
+}
+
+
+
+
+

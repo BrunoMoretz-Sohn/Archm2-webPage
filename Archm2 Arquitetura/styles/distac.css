@@ -1,0 +1,124 @@
+.destaques {
+  height: 8rem;
+  background-color: #EDEDED;
+  padding-top: 20px;
+  margin-inline: auto;
+  position: static;
+  
+}
+
+#destaq{
+  padding-top: 20px;
+  position: absolute;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left; 
+  position: absolute; 
+  left: 1.04vw;
+  font-size: 2.08vw;
+  font-size: clamp(24px, 2.08vw, 40px);
+  display: block;
+  
+}
+
+h2::before {
+  content: "";
+  display: block; 
+  width: 120%; 
+  height: 3px; 
+  background-color: #000; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin-top: 0; 
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 65vh;
+  align-items: center;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.card {
+  height: 60vh;
+  width: 60vh;
+  margin: 1.04vw;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  border-radius: 8px;
+  box-sizing: border-box;
+ 
+}
+
+.card img {
+height: 60vh;
+width: auto;
+border-radius: 8px;
+transition: .5s;
+
+}
+
+.about {
+  height: 70px;
+  width: auto;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 100px;
+  background: rgb(27, 27, 27, .5) ;
+  color: white;
+  transition: .5s;
+}
+
+.card h3 {
+  margin:  1.04vw;
+  font-size:  1.04vw;
+  font-size: clamp(16px, 1.04vw, 20px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.card p {
+  font-size:0.9vw ;
+  margin: 1.04vw;
+  font-size: clamp(9px, 0.9vw, 16px);
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
+  overflow-wrap: break-word;
+  hyphens: auto;
+  
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .about{
+  height: 240px;
+  bottom: 240px;
+  background: black;
+  opacity: 90%;
+}
+
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover img{
+  transform: scale(1.1);
+}

@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@100;400;500;700&family=Syne:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
     <title>Archm2 Arquitetura</title>
 </head>
 <body>
 
+    <aside class="sidebar">
+               
+        <nav class="sidebar-nav">
+            <button onclick="location.href='#home'">
+                <span>
+                    <img src="assets/home.png" alt="home">
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button onclick="location.href='#destaq'">
+                <span>
+                    <img src="assets/destaque.png" alt="destaque">
+                    <span>Destaques</span>
+                </span>
+            </button>
+    
+            <button onclick="location.href='#about'">
+                <span>
+                    <img src="assets/sobre.png" alt="Sobre">
+                    <span>Sobre</span>
+                </span>
+            </button>
+
+            <button onclick="location.href='#projetos'">
+                <span>
+                    <img src="assets/projetos.png" alt="Projetos">
+                    <span>Projetos</span>
+                </span>
+            </button>
+
+            <button onclick="location.href='#contato'">
+                <span>
+                    <img src="assets/contato.png" alt="Contato">
+                    <span>Contato</span>
+                </span>
+            </button>
+
+            <div class="solicitar-orcamento">
+                <a href="mailto:archm2arquitetura@gmail.com?subject=Solicitação de Orçamento&body=Gostaria de solicitar um orçamento" class="solicitar-orcamento" target="_blank">
+                    <img src="assets/orcamento3.png" alt="Solicitar Orçamento">
+                
+                </a>
+            </div>
+  
+        </nav>
+
+        
+
+    </aside>
+
     <div class="page-container">
-        <div class="bg-home" id="home">
+            <div class="bg-home" id="home">
 
-            <header class="bg-logo">
-                <img src="assets/img - logo branco.png" alt="Logo ArchM2">
-            </header>
-
-            <aside class="sidebar">
-                <header class="sidebar-header">
+                <header class="bg-logo">
                     <img src="assets/img - logo branco.png" alt="Logo ArchM2">
                 </header>
-            
-                <nav class="sidebar-nav">
-                    <button onclick="location.href='#home'">
-                        <span>
-                            <img src="assets/home.png" alt="home">
-                            <span>Home</span>
-                        </span>
-                    </button>
-
-                    <button onclick="location.href='#destaq'">
-                        <span>
-                            <img src="assets/destaque.png" alt="destaque">
-                            <span>Destaques</span>
-                        </span>
-                    </button>
-            
-                    <button onclick="location.href='#about'">
-                        <span>
-                            <img src="assets/sobre.png" alt="Sobre">
-                            <span>Sobre</span>
-                        </span>
-                    </button>
-
-                    <button onclick="location.href='#projetos'">
-                        <span>
-                            <img src="assets/projetos.png" alt="Projetos">
-                            <span>Projetos</span>
-                        </span>
-                    </button>
-
-                    <button onclick="location.href='#contato'">
-                        <span>
-                            <img src="assets/contato.png" alt="Contato">
-                            <span>Contato</span>
-                        </span>
-                    </button>
-          
-                </nav>
-
-                <div class="solicitar-orcamento">
-                    <a href="mailto:archm2arquitetura@gmail.com?subject=Solicitação de Orçamento&body=Gostaria de solicitar um orçamento" class="solicitar-orcamento" target="_blank">
-                        <img src="assets/orcamento3.png" alt="Solicitar Orçamento">
-                    
-                    </a>
-                </div>
-
-            </aside>
 
                 <div class="sidebar-icons">
                     <a href="https://wa.me/5521965743613" target="_blank">
@@ -87,26 +86,52 @@
                     </a>
                     
                 </div>
-            
+
+            </div>
+
             <div class="destaques">
+
                 <div id="destaq">
                     <h2>Destaques</h2>
                 </div>
-                
-                <div  id="destaq" class="destaques-content">
-                    <div class="destaque-item">
-                        <img src="assets/img - destaqueVR.png" alt="Destaque VR">
-                        <button>Residência V.R.</button>
-                    </div>
-                    <div class="destaque-item">
-                        <img src="assets/img - destaqueLR.png" alt="Destaque LR">
-                        <button>Residência L.R.</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <section id="sobre" class="container">
+            </div>
+            
+                <div class="container">
+              
+                    <div class="card">
+                        <img src="assets/img - destaqueVR.png" alt="A">
+                        <div class="about">
+                            <h3>Residência V.R.</h3>
+                            <p>Residência de alto padrão no condomínio Alphaville, em Volta Redonda-RJ.<br> O projeto foi estrategicamente desenvolvido para um terreno em declive, aproveitando os platôs naturais. Cada detalhe foi cuidadosamente planejado para maximizar o conforto e a qualidade dos espaços. Explore mais clicando aqui!</p>
+                        </div>
+                    </div>
+              
+                    <div class="card">
+                        <img src="assets/img - destaqueLR.png" alt="B">
+                        <div class="about">
+                            <h3>Residência L.R.</h3>
+                            <p>Este projeto residencial no bairro de Camboinhas foi concebido em um terreno linear, onde cada espaço foi aproveitado com máxima eficiência. Com um design contemporâneo que valoriza tanto a funcionalidade quanto a estética, a residência oferece um equilíbrio perfeito entre espaço e elegância. Descubra mais clicando aqui!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/destaqueinfo.png" alt="C">
+                        <div class="about">
+                            <h3>Por que Contratar um Arquiteto?</h3>
+                            <p>Contratar um escritório de arquitetura é a chave para otimizar seu investimento. Com um projeto bem planejado, você evita desperdícios, economiza nos custos da obra e ainda valoriza o seu imóvel, tornando-o mais atrativo para o mercado. Acesse aqui e descubra como transformar sua construção em um investimento de sucesso!</p>
+                        </div>
+                    </div>
+                    
+              
+
+                </div>
+                
+            
+                    
+        
+
+    <!--     <section id="sobre" class="container">
     
         <div id="about">
             <h2>Sobre Nós</h2>
@@ -275,7 +300,7 @@
         <div class="container">
             <p>&copy; 2024 ArchM2 Arquitetura | Todos os direitos reservados</p>
         </div>
-    </footer>
+    </footer>-->
 
     <script src="script.js"></script>
 </body>
