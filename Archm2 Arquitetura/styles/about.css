@@ -19,7 +19,7 @@
   z-index: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; 
+  background-position: center 35%; 
   background-attachment: fixed;
 }
 
@@ -57,14 +57,21 @@ h2::before {
 
 .sobre-nos-container {
   padding-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
 
 }
 
+
 .sobre-nos-top, .sobre-nos-bottom {
   display: flex;
+  flex-direction: row;
   align-items: flex-start; 
   margin-bottom: 20px; 
   margin-top: 30px;
+  justify-content: space-between;
 }
 
 #perfil1 {
@@ -79,8 +86,8 @@ h2::before {
   line-height: 2.2; 
   margin-right: 40px;
   margin-left: 40px;
-  font-size:  1.04vw;
-  font-size: clamp(16px, 1.04vw, 20px);
+  font-size:  1.20vw;
+  font-size: clamp(16px, 1.20vw, 20px);
 }
 
 .sobre-nos-texto1 p + p {
@@ -100,8 +107,8 @@ h2::before {
   margin-top: 20px;
   margin-right: 20px;
   margin-left: 40px;
-  font-size:  1.04vw;
-  font-size: clamp(16px, 1.04vw, 20px);
+  font-size:  1.20vw;
+  font-size: clamp(16px, 1.20vw, 20px);
 }
 
 .sobre-nos-texto2 p + p {

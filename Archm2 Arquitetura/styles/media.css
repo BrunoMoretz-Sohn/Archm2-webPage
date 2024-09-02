@@ -62,9 +62,9 @@
      display: flex; 
      flex-direction: row !important;
      position: fixed;
-     padding-left: 3vw;
      gap: 2vw;
      margin-top: 0;
+     width: auto;
    }
 
   .sidebar button > span > span{
@@ -128,7 +128,7 @@
     height: 200px;
     bottom: 200px;
   }
-}
+
 
 /* sobre nos */
 
@@ -141,11 +141,9 @@
 
 }
 
-.sobre-nos-top {
-  flex-direction: column; 
-}
 
-.sobre-nos-bottom {
+
+.sobre-nos-top, .sobre-nos-bottom {
   flex-direction: column; 
 }
 
@@ -154,6 +152,7 @@
   height: auto; 
   margin: 0; 
   align-self: center ;
+}
 }
 
 
