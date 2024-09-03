@@ -1,0 +1,131 @@
+.projetos-index {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+#projetos{
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left; 
+  position: absolute; 
+  left: 1.04vw;
+  font-size: 2.08vw;
+  font-size: clamp(24px, 2.08vw, 40px);
+  display: block;
+  
+}
+
+h2::before {
+  content: "";
+  display: block; 
+  width: 120%; 
+  height: 3px; 
+  background-color: #000; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin-top: 0; 
+}
+
+.projetos-menu {
+  align-items: center;
+  margin-left: 2vw;
+  padding-top: 4vh;
+  
+}
+.projetos-container1{
+  padding-top: 9vh;
+  padding-bottom: 5vh;
+}
+
+.projetos-container1, .projetos-container2 {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  align-items: center;
+  margin-inline: auto;
+  overflow: hidden;
+  margin-top: 2vh;
+}
+
+.projetos-card {
+  max-height: 40vh;
+  width: 40vh;
+  margin: 1.04vw;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  border-radius: 8px;
+  box-sizing: border-box;
+ 
+}
+
+.projetos-card img {
+height: 40vh;
+width: auto;
+border-radius: 8px;
+transition: .5s;
+
+}
+
+.projeto-about {
+  height: 70px;
+  width: auto;
+  padding: 6px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 100px;
+  background: rgb(27, 27, 27, .5) ;
+  color: white;
+  transition: .5s;
+}
+
+.projetos-card h3 {
+  margin:  1.04vw;
+  font-size:  1.04vw;
+  font-size: clamp(16px, 1.04vw, 20px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.projetos-card p {
+  font-size:0.7vw ;
+  margin: 1.04vw;
+  font-size: clamp(8px, 0.7vw, 16px);
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
+  overflow-wrap: break-word;
+  hyphens: auto;
+  
+}
+
+.projetos-card:hover {
+  cursor: pointer;
+}
+
+.projetos-card:hover .projeto-about{
+  height: 140px;
+  bottom: 140px;
+  background: black;
+  opacity: 70%;
+}
+
+.projetos-card:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+.projetos-card:hover img{
+  transform: scale(1.1);
+}

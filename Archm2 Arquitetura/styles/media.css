@@ -105,6 +105,8 @@
     justify-content: center;
   }
 
+
+
   .card {
     width: 90vw; 
     height: 40vh; 
@@ -141,17 +143,28 @@
 
 }
 
-
+.sobre-container {
+  height: 190vh;
+}
 
 .sobre-nos-top, .sobre-nos-bottom {
   flex-direction: column; 
 }
 
 #perfil1, #perfil2 {
-  max-width: 100%; 
+  max-width: 60%; 
   height: auto; 
   margin: 0; 
   align-self: center ;
+}
+
+#perfil1 {
+  padding-bottom: 40px;
+}
+
+
+#perfil2 {
+  padding-top: 40px;
 }
 }
 
