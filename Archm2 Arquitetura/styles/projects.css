@@ -42,13 +42,9 @@ h2::before {
   min-width: 30vw;
   margin-top: 4vh;
   justify-content: flex-start;
-  
-  
 }
-.projetos-container1{
-  padding-top: 9vh;
-  padding-bottom: 5vh;
-}
+
+
 
 .projetos-container1,
 .projetos-container2,
@@ -96,7 +92,7 @@ h2::before {
 .projetos-card h3 {
   margin:  1.04vw;
   font-size:  1.04vw;
-  font-size: clamp(16px, 1.04vw, 20px);
+  font-size: clamp(12px, 1.04vw, 20px);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
