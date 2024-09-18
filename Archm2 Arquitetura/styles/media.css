@@ -210,6 +210,26 @@
     height: 10vh;
     bottom: 10vh;
   }
+
+
+
+  .sobre-nos-container {
+    margin-left: 10px ;
+  }
+
+  .projeto img {
+    padding-left: 0px
+  }
+
+  
+  footer {
+    height: 200px;
+    margin-left: 0px;
+  }
+
+
+
+
 }
 
 
