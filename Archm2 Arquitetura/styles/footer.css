@@ -1,0 +1,10 @@
+footer {
+background-color: gray; /* Fundo cinza para o cabeçalho */
+color: white; /* Cor do texto do cabeçalho */
+padding: 1rem; /* Espaçamento interno */
+bottom: 0; /* Fica no topo da página */
+width: calc(100%); /* Ajusta a largura para considerar a navbar */
+margin-left: 20vw; /* Espaço para a largura da navbar */
+text-align: center; /* Centraliza o texto */
+margin-left: 10vw;
+}
