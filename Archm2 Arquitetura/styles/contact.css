@@ -1,34 +1,77 @@
+
+
+.contato-intro {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px; 
+}
+
+.contato-intro::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/imgcontato.jpg");
+  left: 0;
+  padding-top: 100vh;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 35%; 
+  background-attachment: fixed;
+}
+
+.contato-intro::after{
+  content:"";
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, #000 120%);
+}
+
+
+
+
 #contato {
   position: relative;
   background-color: #EDEDED;
-  padding-top: 1vh;
+  padding-top: 2.5vh;
   margin-bottom: 40px;
   height: auto;
   width: 100%;
 }
 
 .contato-grid {
-  padding-top: 30vh;
+  padding-top: 15vh;
   padding-bottom: 30vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
-}
-
-.contato-info p {
-  font-size: 3vh;
+  gap: 5vw;
+  padding-right: 5vw;
 }
 
 .contato-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 1.6;
-  padding-left: 5vw;
+  padding-left: 6vw;
+}
+
+.contato-text p {
+  font-size: 2.5vh;
+  line-height: 5vh;
+}
+
+.contato-adress p {
+  font-size: 3vh;
 }
 
 .contato-icons {
   display: flex;
   gap: 40px;
-  margin-top: 40px;
 }
 
 .formulario {
@@ -36,17 +79,11 @@
   flex-direction: column;
   align-items: center;
   border-radius: 0.75rem;
-  gap: 20px;
-  border: solid 2px rgb(121, 121, 121);
-  padding: 20px;
-  background-color: white;
+  border: solid 0.5px rgb(119, 119, 119);
+  padding: 10px;
   height: 60vh;
 }
 
-.formulario-container h3{
-  font-size: 3vh;
-  padding-bottom: 2vh;
-}
 
 .input-container {
   display: flex;
@@ -66,6 +103,7 @@
   flex: 1;
   padding: 10px;
   border: none;
+  border-radius: 10px;
   outline: none;
   font-size: 16px;
 }

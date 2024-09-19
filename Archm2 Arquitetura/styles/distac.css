@@ -37,8 +37,6 @@ h2::before {
   margin-top: 0; 
 }
 
-
-
 .container {
   display: flex;
   justify-content: space-evenly;
